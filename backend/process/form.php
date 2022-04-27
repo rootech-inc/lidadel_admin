@@ -377,7 +377,7 @@
                                 {
                                     // create thumbnail
                                     $thumbnail = "$path$uni"."thumbs/$new_file_name";
-                                    echo $thumbnail;
+                                    echo $uni;
                                     die();
                                     // compress thumbnail
                                     compress_image($new_path,$thumbnail,2);
