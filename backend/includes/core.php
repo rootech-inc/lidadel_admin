@@ -17,7 +17,7 @@
 
 
 
-    if($host === 'backend.lisadeltravelandtours.com')
+    if($host === 'backend.lisadeltravelandtours.com'|| $host = 'dj.lisadeltravelandtours.com')
     {
         $events_image_path = '/home/lisaavrb/public_html/asssets/events/';
         $services_path = '/home/lisaavrb/public_html/asssets/services/';
