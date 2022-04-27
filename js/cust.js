@@ -243,29 +243,29 @@ $(function() {
                     var action = response_type[0];
                     var message = response_type[1];
                     console.log(action)
-                    // switch (action) {
-                    //     case 'done':
-                    //         // reload
-                    //         reload();
-                    //         break;
-                    //     case 'err':
-                    //         if (message === 'submit_again')
-                    //         {
-                    //             // submit form again
-                    //             console.log('submit again')
-                    //             $('form#upload_file_form').submit();
-                    //         }
-                    //         else
-                    //         {
-                    //             $('#form_err').text(message.toString());
-                    //             // show error
-                    //         }
-                    //
-                    //         break;
-                    //     default:
-                    //         //reload()
-                    //     // reload
-                    // }
+                    switch (action) {
+                        case 'done':
+                            // reload
+                            reload();
+                            break;
+                        case 'err':
+                            if (message === 'submit_again')
+                            {
+                                // submit form again
+                                console.log('submit again')
+                                $('form#upload_file_form').submit();
+                            }
+                            else
+                            {
+                                $('#form_err').text(message.toString());
+                                // show error
+                            }
+
+                            break;
+                        default:
+                            //reload()
+                        // reload
+                    }
                 }
             },
 
