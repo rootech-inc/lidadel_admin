@@ -1,0 +1,40 @@
+[16-Dec-2021 06:03:43 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in /home/lisaavrb/public_html/admin/backend/process/form.php:159
+Stack trace:
+#0 /home/lisaavrb/public_html/admin/backend/process/form.php(159): PDO->exec('INSERT INTO `ga...')
+#1 {main}
+  thrown in /home/lisaavrb/public_html/admin/backend/process/form.php on line 159
+[16-Dec-2021 07:03:09 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in /home/lisaavrb/public_html/admin/backend/process/form.php:160
+Stack trace:
+#0 /home/lisaavrb/public_html/admin/backend/process/form.php(160): PDO->exec('INSERT INTO `ga...')
+#1 {main}
+  thrown in /home/lisaavrb/public_html/admin/backend/process/form.php on line 160
+[16-Dec-2021 07:08:02 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in /home/lisaavrb/public_html/admin/backend/process/form.php:160
+Stack trace:
+#0 /home/lisaavrb/public_html/admin/backend/process/form.php(160): PDO->exec('INSERT INTO `ga...')
+#1 {main}
+  thrown in /home/lisaavrb/public_html/admin/backend/process/form.php on line 160
+[17-Dec-2021 11:22:48 America/New_York] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /home/lisaavrb/public_html/admin/backend/process/form.php on line 338
+[17-Dec-2021 11:24:01 America/New_York] PHP Notice:  Undefined variable: title in /home/lisaavrb/public_html/admin/backend/process/form.php on line 360
+[17-Dec-2021 11:24:01 America/New_York] PHP Notice:  Undefined variable: description in /home/lisaavrb/public_html/admin/backend/process/form.php on line 360
+[17-Dec-2021 11:24:01 America/New_York] PHP Warning:  imagesx() expects parameter 1 to be resource, string given in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 588
+[17-Dec-2021 11:24:01 America/New_York] PHP Warning:  imagesy() expects parameter 1 to be resource, string given in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 589
+[17-Dec-2021 11:24:01 America/New_York] PHP Warning:  Division by zero in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 591
+[17-Dec-2021 11:24:01 America/New_York] PHP Warning:  Division by zero in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 604
+[17-Dec-2021 11:24:01 America/New_York] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, string given in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 616
+[17-Dec-2021 11:24:01 America/New_York] PHP Warning:  imagejpeg(../../../asssets/events/b34ceb8936f4e3aa9702ee648e3ddca2/thumbs/fb4ffc906a45fc57a40effd0c7d94355.jpg): failed to open stream: No such file or directory in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 617
+[17-Dec-2021 11:29:59 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b34ceb8936f4e3aa9702ee648e3ddca2' in 'where clause' in /home/lisaavrb/public_html/admin/backend/includes/functions.php:141
+Stack trace:
+#0 /home/lisaavrb/public_html/admin/backend/includes/functions.php(141): PDOStatement->execute()
+#1 /home/lisaavrb/public_html/admin/backend/process/form.php(350): fetchFunc('tours', '`tour_uni` = b3...', Object(PDO))
+#2 {main}
+  thrown in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 141
+[17-Dec-2021 11:31:24 America/New_York] PHP Warning:  imagesx() expects parameter 1 to be resource, string given in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 588
+[17-Dec-2021 11:31:24 America/New_York] PHP Warning:  imagesy() expects parameter 1 to be resource, string given in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 589
+[17-Dec-2021 11:31:24 America/New_York] PHP Warning:  Division by zero in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 591
+[17-Dec-2021 11:31:24 America/New_York] PHP Warning:  Division by zero in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 604
+[17-Dec-2021 11:31:24 America/New_York] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, string given in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 616
+[17-Dec-2021 11:52:23 America/New_York] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function set_session(), 1 passed in /home/lisaavrb/public_html/admin/backend/process/form.php on line 384 and exactly 2 expected in /home/lisaavrb/public_html/admin/backend/includes/functions.php:518
+Stack trace:
+#0 /home/lisaavrb/public_html/admin/backend/process/form.php(384): set_session('view=all')
+#1 {main}
+  thrown in /home/lisaavrb/public_html/admin/backend/includes/functions.php on line 518

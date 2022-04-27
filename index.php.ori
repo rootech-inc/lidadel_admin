@@ -1,0 +1,85 @@
+<?php
+    require 'backend/includes/core.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Best Travel and Tour in Ghana, Lisadel Ghana Travel to Dubai and Europe and the World. Our services are unique. We put your satisfaction beyond our gains">
+  <link rel="canonical" href="<?php echo $root_addr ?>" />
+  <title>Lisadel Travels And Tour | Admin Portal</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+
+  <script src="js/cust.js"></script>
+  <link rel="shortcut icon" href="../asssets/logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <main class="overflow-hidden">
+      <div class="container-fluid h-100">
+
+        <div class="row no-gutters h-100">
+          <!-- nav -->
+          <div class="col-sm-3 h-100 p-2">
+            <div class="w-100 h-100 rounded_c p-1 bg_brand">
+              <header class=""></header>
+              <article>
+                <div id="accordion">
+
+                  <div class="card n_col text-light">
+                    <div class="card-header n_col">
+                      <a class="card-link trip_act fa fa-plane" data-toggle="collapse" href="#collapseOne">
+                        Trips
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="collapse" data-parent="#accordion">
+                      <div class="card-body pt-0 pb-0">
+                        <p onclick="set_session('module=trip,view=all')" class="text-light trp_hov ml-4 pointer" href="">All Trips</p>
+                        <p onclick="set_session('module=trip,view=new,stage=text')" class="text-light ml-4 trp_hov pointer" href="">Add Trip</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- work space -->
+          <div class="col-sm-9 h-100 p-2">
+            <div class="w-100 h-100 rounded_c p-1 bg-light shadow-lg">
+                <?php
+
+                    if($module == 'trip')
+                    {
+                        if($view == 'all')
+                        {
+                            include "backend/includes/parts/trips/all_trips.php";
+                        } elseif ($view == 'new')
+                        {
+                            include "backend/includes/parts/trips/new.php";
+                        }
+                    }
+                ?>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+  </main>
+
+</body>
+</html>

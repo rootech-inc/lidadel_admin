@@ -1,0 +1,25 @@
+[17-Dec-2021 06:11:55 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_session() in /home/lisaavrb/public_html/admin/index2.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/lisaavrb/public_html/admin/index2.php on line 54
+[17-Dec-2021 06:12:31 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_session() in /home/lisaavrb/public_html/admin/index2.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/lisaavrb/public_html/admin/index2.php on line 55
+[17-Dec-2021 09:28:27 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'order clause' in /home/lisaavrb/public_html/admin/index2.php:60
+Stack trace:
+#0 /home/lisaavrb/public_html/admin/index2.php(60): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in /home/lisaavrb/public_html/admin/index2.php on line 60
+[17-Dec-2021 09:28:53 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tour_id' in 'order clause' in /home/lisaavrb/public_html/admin/index2.php:60
+Stack trace:
+#0 /home/lisaavrb/public_html/admin/index2.php(60): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in /home/lisaavrb/public_html/admin/index2.php on line 60
+[17-Dec-2021 09:29:03 America/New_York] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tourid' in 'order clause' in /home/lisaavrb/public_html/admin/index2.php:60
+Stack trace:
+#0 /home/lisaavrb/public_html/admin/index2.php(60): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in /home/lisaavrb/public_html/admin/index2.php on line 60
+[17-Dec-2021 10:31:56 America/New_York] PHP Notice:  A non well formed numeric value encountered in /home/lisaavrb/public_html/admin/backend/includes/parts/trips/all_trips.php on line 122
+[17-Dec-2021 10:32:04 America/New_York] PHP Notice:  A non well formed numeric value encountered in /home/lisaavrb/public_html/admin/backend/includes/parts/trips/all_trips.php on line 122
