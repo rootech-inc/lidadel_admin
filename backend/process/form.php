@@ -345,7 +345,7 @@
                     if(!empty(array_filter($_FILES['gall_images']['name'])))
                     {
                         $uni = get_session('event');
-                        $path = '/home/stuffs/dev/PHP/lisadel_pub/asssets/events/';
+                        $path = $events_image_path;
                         foreach ($_FILES['gall_images']['tmp_name'] as $key => $value)
                         {
                             $file_tmp_name = $_FILES['gall_images']['tmp_name'][$key];
