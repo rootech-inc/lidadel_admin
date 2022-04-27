@@ -116,7 +116,7 @@ require 'backend/includes/configs/home.php';
                                     }
                                     $event_stage = get_session('event_stage');
                                     include "backend/includes/parts/trips/new3.php";
-                                } 
+                                }
 
                                 elseif ($view == 'add_images') // add images to an event gallery
                                 {
